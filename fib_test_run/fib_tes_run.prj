@@ -1,0 +1,2 @@
+verilog work "../fib_ckt/fib.v"
+verilog work "fib_tes_run.v"

@@ -1,0 +1,7 @@
+Vivado Simulator 2015.1
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2015.1/bin/unwrapped/win64.o/xelab.exe -wto 9d965b6d531c4bf8ba821b47ecbd8219 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot d_edge_detector_test_behav xil_defaultlib.d_edge_detector_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <d_edge_detector> not found while processing module instance <m1> [D:/Xilinx/Projects/d_edg_detector/d_edge_detector_test.v:30]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

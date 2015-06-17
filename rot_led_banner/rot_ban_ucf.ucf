@@ -1,0 +1,3 @@
+
+NET "clk" LOC = "B8"; # Bank = 0, Signal name = MCLK
+NET "led" LOC = "M5" ;  # Bank = 2, Signal name = LD0

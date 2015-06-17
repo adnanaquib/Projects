@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Projects/bcd2bin/bin2bcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bcd2bin
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Projects/bcd2bin/bcd2bin_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bcd2bin_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Projects/bcd_2_bin_test/bcd_2_bin_test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

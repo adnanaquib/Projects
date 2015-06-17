@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Xilinx\Projects\FSMD_debounce_explicit\debounce_explicit_test.ncd
+OUTFILE=D:\Xilinx\Projects\FSMD_debounce_explicit\debounce_explicit_test.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=D:\Xilinx\Projects\FSMD_debounce_explicit
+LICENSE=WebPack
+USER_INFO=210790164_0_0_952

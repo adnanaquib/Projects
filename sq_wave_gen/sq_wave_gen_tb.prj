@@ -1,0 +1,2 @@
+verilog work "sq_wave_gen.v"
+verilog work "sq_wave_gen_tb.v"

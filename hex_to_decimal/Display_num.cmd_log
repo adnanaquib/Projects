@@ -1,0 +1,70 @@
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Cont.ucf -p xc3s100e-cp132-4 Display_num.ngc Display_num.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Display_num_map.ncd Display_num.ngd Display_num.pcf 
+par -w -intstyle ise -ol high -t 1 Display_num_map.ncd Display_num.ncd Display_num.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_num.twx Display_num.ncd -o Display_num.twr Display_num.pcf -ucf Cont.ucf 
+bitgen -intstyle ise -f Display_num.ut Display_num.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Cont.ucf -p xc3s100e-cp132-4 Display_num.ngc Display_num.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Display_num_map.ncd Display_num.ngd Display_num.pcf 
+par -w -intstyle ise -ol high -t 1 Display_num_map.ncd Display_num.ncd Display_num.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_num.twx Display_num.ncd -o Display_num.twr Display_num.pcf -ucf Cont.ucf 
+bitgen -intstyle ise -f Display_num.ut Display_num.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Cont.ucf -p xc3s100e-cp132-4 Display_num.ngc Display_num.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Display_num_map.ncd Display_num.ngd Display_num.pcf 
+par -w -intstyle ise -ol high -t 1 Display_num_map.ncd Display_num.ncd Display_num.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_num.twx Display_num.ncd -o Display_num.twr Display_num.pcf -ucf Cont.ucf 
+bitgen -intstyle ise -f Display_num.ut Display_num.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Cont.ucf -p xc3s100e-cp132-4 Display_num.ngc Display_num.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Display_num_map.ncd Display_num.ngd Display_num.pcf 
+par -w -intstyle ise -ol high -t 1 Display_num_map.ncd Display_num.ncd Display_num.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_num.twx Display_num.ncd -o Display_num.twr Display_num.pcf -ucf Cont.ucf 
+bitgen -intstyle ise -f Display_num.ut Display_num.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Cont.ucf -p xc3s100e-cp132-4 Display_num.ngc Display_num.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Display_num_map.ncd Display_num.ngd Display_num.pcf 
+par -w -intstyle ise -ol high -t 1 Display_num_map.ncd Display_num.ncd Display_num.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_num.twx Display_num.ncd -o Display_num.twr Display_num.pcf -ucf Cont.ucf 
+bitgen -intstyle ise -f Display_num.ut Display_num.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Cont.ucf -p xc3s100e-cp132-4 Display_num.ngc Display_num.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Display_num_map.ncd Display_num.ngd Display_num.pcf 
+par -w -intstyle ise -ol high -t 1 Display_num_map.ncd Display_num.ncd Display_num.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_num.twx Display_num.ncd -o Display_num.twr Display_num.pcf -ucf Cont.ucf 
+bitgen -intstyle ise -f Display_num.ut Display_num.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Cont.ucf -p xc3s100e-cp132-4 Display_num.ngc Display_num.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Cont.ucf -p xc3s100e-cp132-4 Display_num.ngc Display_num.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Display_num_map.ncd Display_num.ngd Display_num.pcf 
+par -w -intstyle ise -ol high -t 1 Display_num_map.ncd Display_num.ncd Display_num.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_num.twx Display_num.ncd -o Display_num.twr Display_num.pcf -ucf Cont.ucf 
+bitgen -intstyle ise -f Display_num.ut Display_num.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Cont.ucf -p xc3s100e-cp132-4 Display_num.ngc Display_num.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Display_num_map.ncd Display_num.ngd Display_num.pcf 
+par -w -intstyle ise -ol high -t 1 Display_num_map.ncd Display_num.ncd Display_num.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_num.twx Display_num.ncd -o Display_num.twr Display_num.pcf -ucf Cont.ucf 
+bitgen -intstyle ise -f Display_num.ut Display_num.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Cont.ucf -p xc3s100e-cp132-4 Display_num.ngc Display_num.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Display_num_map.ncd Display_num.ngd Display_num.pcf 
+par -w -intstyle ise -ol high -t 1 Display_num_map.ncd Display_num.ncd Display_num.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_num.twx Display_num.ncd -o Display_num.twr Display_num.pcf -ucf Cont.ucf 
+bitgen -intstyle ise -f Display_num.ut Display_num.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/hex_to_decimal/Display_num.xst" -ofn "D:/Xilinx/Projects/hex_to_decimal/Display_num.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Cont.ucf -p xc3s100e-cp132-4 Display_num.ngc Display_num.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Display_num_map.ncd Display_num.ngd Display_num.pcf 
+par -w -intstyle ise -ol high -t 1 Display_num_map.ncd Display_num.ncd Display_num.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display_num.twx Display_num.ncd -o Display_num.twr Display_num.pcf -ucf Cont.ucf 
+bitgen -intstyle ise -f Display_num.ut Display_num.ncd 

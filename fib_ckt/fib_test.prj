@@ -1,0 +1,5 @@
+verilog work "fib.v"
+verilog work "actual_bin2bcd.v"
+verilog work "../disp_hex_mux/disp_hex_mux.v"
+verilog work "../bcd2bin/bin2bcd.v"
+verilog work "fib_test.v"

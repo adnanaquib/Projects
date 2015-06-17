@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/Xilinx/Projects/auto_freq/auto_freq.xst" -ofn "D:/Xilinx/Projects/auto_freq/auto_freq.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/auto_freq/auto_freq.xst" -ofn "D:/Xilinx/Projects/auto_freq/auto_freq.syr" 

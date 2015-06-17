@@ -1,0 +1,2 @@
+verilog work "rot_led_banner.v"
+verilog work "rot_led_banner_test.v"

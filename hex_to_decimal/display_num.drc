@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Jun 02 19:46:07 2015
+
+drc -z Display_num.ncd Display_num.pcf
+
+DRC detected 0 errors and 0 warnings.

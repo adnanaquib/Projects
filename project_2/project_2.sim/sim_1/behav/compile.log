@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Projects/d_edg_detector/d_edge_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_edge_detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Projects/d_edg_detector/d_edge_detector_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_edge_detector_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Projects/project_2/project_2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

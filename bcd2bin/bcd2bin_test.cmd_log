@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Xilinx/Projects/bcd2bin/bcd2bin_test.xst" -ofn "D:/Xilinx/Projects/bcd2bin/bcd2bin_test.syr" 

@@ -1,0 +1,2 @@
+verilog work "rot_sq_circuit.v"
+verilog work "rot_sq_circuit_test.v"

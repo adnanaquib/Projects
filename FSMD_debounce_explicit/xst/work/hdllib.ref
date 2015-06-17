@@ -1,0 +1,3 @@
+MO disp_hex_mux NULL ../disp_hex_mux/disp_hex_mux.v vlg49/disp__hex__mux.bin 1433706118
+MO debounce_explicit_test NULL debounce_explicit_test.v vlg51/debounce__explicit__test.bin 1433706118
+MO debounce_explicit NULL debounce_explicit.v vlg36/debounce__explicit.bin 1433706118

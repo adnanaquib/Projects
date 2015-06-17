@@ -1,0 +1,64 @@
+    ____  ____
+   /   /\/   /
+  /___/  \  /    VENDOR      : Xilinx Inc.
+  \   \   \/     VERSION     : 14.7 (P.20131013)
+   \   \         APPLICATION : D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\compxlib.exe
+   /   /         CONTENTS    : Compilation Log
+  /___/   /\     FILENAME    : compxlib.log
+  \   \  /  \    
+   \___\/\___\
+
+Release 14.7 - D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\compxlib.exe 14.7 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Processing command line ...
+Library Source Paths => 'D:/Xilinx/14.7/ISE_DS/ISE'
+Current Working Directory => 'D:\Xilinx\Projects\hexttosseg'
+Compilation Mode = FAST
+Execute Mode = ON
+Scheduling library installation & compilation for architectures: spartan3e
+
+Scheduling library installation & compilation for libraries: simprim unisim xilinxcorelib edk
+
+Signature:-
+------------------------------------------------------------------------------
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\compxlib.exe -s mti_se -l verilog -arch spartan3e -lib unisim -lib simprim -lib xilinxcorelib -lib edk -exclude_superseded -intstyle ise 
+------------------------------------------------------------------------------
+ERROR:Compxlib - COMPXLIB[sim]: Unable to automatically find executables for simulator 'mti_se' from the following paths:
+    D:\Xilinx\14.7\ISE_DS\ISE\\lib\nt
+   D:\Xilinx\14.7\ISE_DS\ISE\\bin\nt
+   D:\Xilinx\14.7\ISE_DS\ISE\bin\nt
+   D:\Xilinx\14.7\ISE_DS\ISE\lib\nt
+   D:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav
+   D:\Xilinx\14.7\ISE_DS\PlanAhead\bin
+   D:\Xilinx\14.7\ISE_DS\EDK\bin\nt
+   D:\Xilinx\14.7\ISE_DS\EDK\lib\nt
+   D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin
+   D:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin
+   D:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin
+   D:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin
+   D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt_be\bin
+   D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt_le\bin
+   D:\Xilinx\14.7\ISE_DS\common\bin\nt
+   D:\Xilinx\14.7\ISE_DS\common\lib\nt
+   C:\ProgramData\Oracle\Java\javapath
+   C:\Program Files (x86)\Intel\iCLS Client\
+   C:\Program Files\Intel\iCLS Client\
+   C:\Windows\system32
+   C:\Windows
+   C:\Windows\System32\Wbem
+   C:\Windows\System32\WindowsPowerShell\v1.0\
+   C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+   C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+   C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+   C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+   D:\Program Files\MATLAB\R2014a\runtime\win64
+   D:\Program Files\MATLAB\R2014a\bin
+   D:\Program Files\MATLAB\R2014a\polyspace\bin
+   C:\Program Files\Microsoft SQL Server\110\Tools\Binn\
+   D:\Program Files\MiKTeX 2.9\miktex\bin\x64\
+   C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+   C:\Program Files\Common Files\Autodesk Shared\
+   C:\Program Files (x86)\Autodesk\Backburner\
+   D:\Program Files (x86)\Autodesk\Backburner\.
+Simulator 'mti_se' is ignored.

@@ -1,0 +1,517 @@
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim rot_led_banner_test.ngc rot_led_banner_test_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.xst" -ofn "D:/Xilinx/Projects/rot_led_banner/rot_led_banner_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ban_cionst.ucf -p xc3s100e-cp132-4 rot_led_banner_test.ngc rot_led_banner_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o rot_led_banner_test_map.ncd rot_led_banner_test.ngd rot_led_banner_test.pcf 
+par -w -intstyle ise -ol high -t 1 rot_led_banner_test_map.ncd rot_led_banner_test.ncd rot_led_banner_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_led_banner_test.twx rot_led_banner_test.ncd -o rot_led_banner_test.twr rot_led_banner_test.pcf -ucf ban_cionst.ucf 
+bitgen -intstyle ise -f rot_led_banner_test.ut rot_led_banner_test.ncd 

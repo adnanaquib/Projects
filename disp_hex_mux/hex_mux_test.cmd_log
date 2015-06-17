@@ -1,0 +1,44 @@
+xst -intstyle ise -ifn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.xst" -ofn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.xst" -ofn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.xst" -ofn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hex_constraints.ucf -p xc3s100e-cp132-4 hex_mux_test.ngc hex_mux_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o hex_mux_test_map.ncd hex_mux_test.ngd hex_mux_test.pcf 
+par -w -intstyle ise -ol high -t 1 hex_mux_test_map.ncd hex_mux_test.ncd hex_mux_test.pcf 
+bitgen -intstyle ise -f hex_mux_test.ut hex_mux_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.xst" -ofn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hex_constraints.ucf -p xc3s100e-cp132-4 hex_mux_test.ngc hex_mux_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o hex_mux_test_map.ncd hex_mux_test.ngd hex_mux_test.pcf 
+par -w -intstyle ise -ol high -t 1 hex_mux_test_map.ncd hex_mux_test.ncd hex_mux_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml hex_mux_test.twx hex_mux_test.ncd -o hex_mux_test.twr hex_mux_test.pcf -ucf hex_constraints.ucf 
+bitgen -intstyle ise -f hex_mux_test.ut hex_mux_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.xst" -ofn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.xst" -ofn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hex_constraints.ucf -p xc3s100e-cp132-4 hex_mux_test.ngc hex_mux_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o hex_mux_test_map.ncd hex_mux_test.ngd hex_mux_test.pcf 
+par -w -intstyle ise -ol high -t 1 hex_mux_test_map.ncd hex_mux_test.ncd hex_mux_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml hex_mux_test.twx hex_mux_test.ncd -o hex_mux_test.twr hex_mux_test.pcf -ucf hex_constraints.ucf 
+bitgen -intstyle ise -f hex_mux_test.ut hex_mux_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.xst" -ofn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hex_constraints.ucf -p xc3s100e-cp132-4 hex_mux_test.ngc hex_mux_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o hex_mux_test_map.ncd hex_mux_test.ngd hex_mux_test.pcf 
+par -w -intstyle ise -ol high -t 1 hex_mux_test_map.ncd hex_mux_test.ncd hex_mux_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml hex_mux_test.twx hex_mux_test.ncd -o hex_mux_test.twr hex_mux_test.pcf -ucf hex_constraints.ucf 
+bitgen -intstyle ise -f hex_mux_test.ut hex_mux_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.xst" -ofn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hex_constraints.ucf -p xc3s100e-cp132-4 hex_mux_test.ngc hex_mux_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o hex_mux_test_map.ncd hex_mux_test.ngd hex_mux_test.pcf 
+par -w -intstyle ise -ol high -t 1 hex_mux_test_map.ncd hex_mux_test.ncd hex_mux_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml hex_mux_test.twx hex_mux_test.ncd -o hex_mux_test.twr hex_mux_test.pcf -ucf hex_constraints.ucf 
+bitgen -intstyle ise -f hex_mux_test.ut hex_mux_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.xst" -ofn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hex_constraints.ucf -p xc3s100e-cp132-4 hex_mux_test.ngc hex_mux_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o hex_mux_test_map.ncd hex_mux_test.ngd hex_mux_test.pcf 
+par -w -intstyle ise -ol high -t 1 hex_mux_test_map.ncd hex_mux_test.ncd hex_mux_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml hex_mux_test.twx hex_mux_test.ncd -o hex_mux_test.twr hex_mux_test.pcf -ucf hex_constraints.ucf 
+bitgen -intstyle ise -f hex_mux_test.ut hex_mux_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.xst" -ofn "D:/Xilinx/Projects/disp_hex_mux/hex_mux_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hex_constraints.ucf -p xc3s100e-cp132-4 hex_mux_test.ngc hex_mux_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o hex_mux_test_map.ncd hex_mux_test.ngd hex_mux_test.pcf 
+par -w -intstyle ise -ol high -t 1 hex_mux_test_map.ncd hex_mux_test.ncd hex_mux_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml hex_mux_test.twx hex_mux_test.ncd -o hex_mux_test.twr hex_mux_test.pcf -ucf hex_constraints.ucf 
+bitgen -intstyle ise -f hex_mux_test.ut hex_mux_test.ncd 

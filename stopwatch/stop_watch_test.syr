@@ -1,0 +1,431 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: stop_watch_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "stop_watch_test.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "stop_watch_test"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : stop_watch_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "stop_watch_cascade.v" in library work
+Compiling verilog file "../disp_hex_mux/disp_hex_mux.v" in library work
+Module <stop_watch_cascade> compiled
+Compiling verilog file "stop_watch_test.v" in library work
+Module <disp_hex_mux> compiled
+Module <stop_watch_test> compiled
+No errors in compilation
+Analysis of file <"stop_watch_test.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <stop_watch_test> in library <work>.
+
+Analyzing hierarchy for module <disp_hex_mux> in library <work> with parameters.
+	N = "00000000000000000000000000010010"
+
+Analyzing hierarchy for module <stop_watch_cascade> in library <work> with parameters.
+	DVSR = "00000000010011000100101101000000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <stop_watch_test>.
+Module <stop_watch_test> is correct for synthesis.
+ 
+Analyzing module <disp_hex_mux> in library <work>.
+	N = 32'sb00000000000000000000000000010010
+Module <disp_hex_mux> is correct for synthesis.
+ 
+Analyzing module <stop_watch_cascade> in library <work>.
+	DVSR = 32'sb00000000010011000100101101000000
+Module <stop_watch_cascade> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <disp_hex_mux>.
+    Related source file is "../disp_hex_mux/disp_hex_mux.v".
+    Found 4x1-bit ROM for signal <dp>.
+    Found 16x7-bit ROM for signal <hex_in$rom0000>.
+    Found 1-of-4 decoder for signal <an>.
+    Found 4-bit 4-to-1 multiplexer for signal <hex_in>.
+    Found 18-bit up counter for signal <q_reg>.
+    Summary:
+	inferred   2 ROM(s).
+	inferred   1 Counter(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Decoder(s).
+Unit <disp_hex_mux> synthesized.
+
+
+Synthesizing Unit <stop_watch_cascade>.
+    Related source file is "stop_watch_cascade.v".
+    Found 4-bit up counter for signal <d0_reg>.
+    Found 4-bit up counter for signal <d1_reg>.
+    Found 4-bit up counter for signal <d2_reg>.
+    Found 23-bit up counter for signal <ms_reg>.
+    Summary:
+	inferred   4 Counter(s).
+Unit <stop_watch_cascade> synthesized.
+
+
+Synthesizing Unit <stop_watch_test>.
+    Related source file is "stop_watch_test.v".
+Unit <stop_watch_test> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x1-bit ROM                                           : 1
+# Counters                                             : 5
+ 18-bit up counter                                     : 1
+ 23-bit up counter                                     : 1
+ 4-bit up counter                                      : 3
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x1-bit ROM                                           : 1
+# Counters                                             : 5
+ 18-bit up counter                                     : 1
+ 23-bit up counter                                     : 1
+ 4-bit up counter                                      : 3
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <stop_watch_test> ...
+
+Optimizing unit <stop_watch_cascade> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block stop_watch_test, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 53
+ Flip-Flops                                            : 53
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : stop_watch_test.ngr
+Top Level Output File Name         : stop_watch_test
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 15
+
+Cell Usage :
+# BELS                             : 184
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 39
+#      LUT2                        : 12
+#      LUT2_D                      : 2
+#      LUT3                        : 9
+#      LUT4                        : 22
+#      LUT4_D                      : 1
+#      LUT4_L                      : 1
+#      MUXCY                       : 45
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 41
+# FlipFlops/Latches                : 53
+#      FD                          : 18
+#      FDRE                        : 35
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 2
+#      OBUF                        : 12
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                       46  out of    960     4%  
+ Number of Slice Flip Flops:             53  out of   1920     2%  
+ Number of 4 input LUTs:                 92  out of   1920     4%  
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of     83    18%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 53    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.682ns (Maximum Frequency: 149.656MHz)
+   Minimum input arrival time before clock: 4.797ns
+   Maximum output required time after clock: 8.053ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.682ns (frequency: 149.656MHz)
+  Total number of paths / destination ports: 1702 / 100
+-------------------------------------------------------------------------
+Delay:               6.682ns (Levels of Logic = 8)
+  Source:            counter_unit/ms_reg_8 (FF)
+  Destination:       counter_unit/ms_reg_22 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: counter_unit/ms_reg_8 to counter_unit/ms_reg_22
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.591   0.622  counter_unit/ms_reg_8 (counter_unit/ms_reg_8)
+     LUT3:I0->O            1   0.704   0.000  counter_unit/ms_tick_cmp_eq0000_wg_lut<0> (counter_unit/ms_tick_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  counter_unit/ms_tick_cmp_eq0000_wg_cy<0> (counter_unit/ms_tick_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  counter_unit/ms_tick_cmp_eq0000_wg_cy<1> (counter_unit/ms_tick_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  counter_unit/ms_tick_cmp_eq0000_wg_cy<2> (counter_unit/ms_tick_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  counter_unit/ms_tick_cmp_eq0000_wg_cy<3> (counter_unit/ms_tick_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  counter_unit/ms_tick_cmp_eq0000_wg_cy<4> (counter_unit/ms_tick_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O          10   0.331   0.917  counter_unit/ms_tick_cmp_eq0000_wg_cy<5> (counter_unit/ms_tick)
+     LUT3:I2->O           23   0.704   1.202  counter_unit/ms_reg_or00001 (counter_unit/ms_reg_or0000)
+     FDRE:R                    0.911          counter_unit/ms_reg_0
+    ----------------------------------------
+    Total                      6.682ns (3.941ns logic, 2.741ns route)
+                                       (59.0% logic, 41.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 81 / 58
+-------------------------------------------------------------------------
+Offset:              4.797ns (Levels of Logic = 2)
+  Source:            btn<0> (PAD)
+  Destination:       counter_unit/ms_reg_22 (FF)
+  Destination Clock: clk rising
+
+  Data Path: btn<0> to counter_unit/ms_reg_22
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.762  btn_0_IBUF (btn_0_IBUF)
+     LUT3:I0->O           23   0.704   1.202  counter_unit/ms_reg_or00001 (counter_unit/ms_reg_or0000)
+     FDRE:R                    0.911          counter_unit/ms_reg_0
+    ----------------------------------------
+    Total                      4.797ns (2.833ns logic, 1.964ns route)
+                                       (59.1% logic, 40.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 178 / 12
+-------------------------------------------------------------------------
+Offset:              8.053ns (Levels of Logic = 4)
+  Source:            disp_unit/q_reg_16 (FF)
+  Destination:       sseg<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: disp_unit/q_reg_16 to sseg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              13   0.591   1.158  disp_unit/q_reg_16 (disp_unit/q_reg_16)
+     LUT3:I0->O            1   0.704   0.000  disp_unit/Mmux_hex_in82 (disp_unit/Mmux_hex_in81)
+     MUXF5:I0->O           7   0.321   0.883  disp_unit/Mmux_hex_in8_f5 (disp_unit/hex_in<3>)
+     LUT4:I0->O            1   0.704   0.420  disp_unit/Mrom_hex_in_rom000041 (sseg_4_OBUF)
+     OBUF:I->O                 3.272          sseg_4_OBUF (sseg<4>)
+    ----------------------------------------
+    Total                      8.053ns (5.592ns logic, 2.461ns route)
+                                       (69.4% logic, 30.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.75 secs
+ 
+--> 
+
+Total memory usage is 194040 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

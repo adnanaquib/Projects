@@ -1,0 +1,3 @@
+MO disp_hex_mux NULL ../disp_hex_mux/disp_hex_mux.v vlg49/disp__hex__mux.bin 1433382579
+MO stop_watch_test NULL stop_watch_test.v vlg23/stop__watch__test.bin 1433382579
+MO stop_watch_cascade NULL stop_watch_cascade.v vlg2F/stop__watch__cascade.bin 1433382579

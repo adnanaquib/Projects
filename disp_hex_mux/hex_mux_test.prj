@@ -1,0 +1,2 @@
+verilog work "disp_hex_mux.v"
+verilog work "hex_mux_test.v"

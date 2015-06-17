@@ -1,0 +1,431 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: rot_sq_circuit_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "rot_sq_circuit_test.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "rot_sq_circuit_test"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : rot_sq_circuit_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rot_sq_circuit.v" in library work
+Compiling verilog file "rot_sq_circuit_test.v" in library work
+Module <rot_sq_circuit> compiled
+Module <rot_sq_circuit_test> compiled
+No errors in compilation
+Analysis of file <"rot_sq_circuit_test.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <rot_sq_circuit_test> in library <work>.
+
+Analyzing hierarchy for module <rot_sq_circuit> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <rot_sq_circuit_test>.
+Module <rot_sq_circuit_test> is correct for synthesis.
+ 
+Analyzing module <rot_sq_circuit> in library <work>.
+Module <rot_sq_circuit> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <rot_sq_circuit>.
+    Related source file is "rot_sq_circuit.v".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 4-bit latch for signal <an>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 7-bit latch for signal <sseg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 4-bit comparator less for signal <an$cmp_lt0000> created at line 64.
+    Found 27-bit register for signal <clk_counter>.
+    Found 27-bit comparator greater for signal <clk_counter$cmp_gt0001> created at line 43.
+    Found 27-bit adder for signal <clk_counter_next$addsub0000> created at line 51.
+    Found 4-bit up counter for signal <led_shift_counter>.
+    Found 4-bit comparator greater for signal <led_shift_counter$cmp_gt0000> created at line 46.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <rot_sq_circuit> synthesized.
+
+
+Synthesizing Unit <rot_sq_circuit_test>.
+    Related source file is "rot_sq_circuit_test.v".
+Unit <rot_sq_circuit_test> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 27-bit adder                                          : 1
+# Counters                                             : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 1
+ 27-bit register                                       : 1
+# Latches                                              : 2
+ 4-bit latch                                           : 1
+ 7-bit latch                                           : 1
+# Comparators                                          : 3
+ 27-bit comparator greater                             : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 27-bit adder                                          : 1
+# Counters                                             : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 27
+ Flip-Flops                                            : 27
+# Latches                                              : 2
+ 4-bit latch                                           : 1
+ 7-bit latch                                           : 1
+# Comparators                                          : 3
+ 27-bit comparator greater                             : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <sseg_0> in Unit <rot_sq_circuit> is equivalent to the following 2 FFs/Latches, which will be removed : <sseg_1> <sseg_5> 
+INFO:Xst:2261 - The FF/Latch <sseg_2> in Unit <rot_sq_circuit> is equivalent to the following 2 FFs/Latches, which will be removed : <sseg_3> <sseg_4> 
+WARNING:Xst:1710 - FF/Latch <sseg_6> (without init value) has a constant value of 0 in block <rot_sq_circuit>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <rot_sq_circuit_test> ...
+
+Optimizing unit <rot_sq_circuit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block rot_sq_circuit_test, actual ratio is 5.
+Latch work/sseg_0 has been replicated 2 time(s) to handle iob=true attribute.
+Latch work/sseg_2 has been replicated 2 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 31
+ Flip-Flops                                            : 31
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : rot_sq_circuit_test.ngr
+Top Level Output File Name         : rot_sq_circuit_test
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 165
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 30
+#      LUT2                        : 30
+#      LUT3                        : 7
+#      LUT4                        : 12
+#      MUXCY                       : 46
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 27
+# FlipFlops/Latches                : 41
+#      FDR                         : 31
+#      LD                          : 10
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                       48  out of    960     5%  
+ Number of Slice Flip Flops:             35  out of   1920     1%  
+ Number of 4 input LUTs:                 86  out of   1920     4%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of     83    14%  
+    IOB Flip Flops:                       6
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                  | Clock buffer(FF name)  | Load  |
+--------------------------------------------------------------+------------------------+-------+
+clk                                                           | BUFGP                  | 31    |
+work/counter_tick(work/clk_counter_next_cmp_eq0000_wg_cy<6>:O)| NONE(*)(work/an_3)     | 10    |
+--------------------------------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.869ns (Maximum Frequency: 145.589MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.395ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.869ns (frequency: 145.589MHz)
+  Total number of paths / destination ports: 1862 / 62
+-------------------------------------------------------------------------
+Delay:               6.869ns (Levels of Logic = 15)
+  Source:            work/clk_counter_0 (FF)
+  Destination:       work/clk_counter_26 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: work/clk_counter_0 to work/clk_counter_26
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.591   0.706  work/clk_counter_0 (work/clk_counter_0)
+     LUT4:I0->O            1   0.704   0.000  work/Mcompar_clk_counter_cmp_gt0001_lut<0> (work/Mcompar_clk_counter_cmp_gt0001_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  work/Mcompar_clk_counter_cmp_gt0001_cy<0> (work/Mcompar_clk_counter_cmp_gt0001_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  work/Mcompar_clk_counter_cmp_gt0001_cy<1> (work/Mcompar_clk_counter_cmp_gt0001_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  work/Mcompar_clk_counter_cmp_gt0001_cy<2> (work/Mcompar_clk_counter_cmp_gt0001_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  work/Mcompar_clk_counter_cmp_gt0001_cy<3> (work/Mcompar_clk_counter_cmp_gt0001_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  work/Mcompar_clk_counter_cmp_gt0001_cy<4> (work/Mcompar_clk_counter_cmp_gt0001_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  work/Mcompar_clk_counter_cmp_gt0001_cy<5> (work/Mcompar_clk_counter_cmp_gt0001_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  work/Mcompar_clk_counter_cmp_gt0001_cy<6> (work/Mcompar_clk_counter_cmp_gt0001_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  work/Mcompar_clk_counter_cmp_gt0001_cy<7> (work/Mcompar_clk_counter_cmp_gt0001_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  work/Mcompar_clk_counter_cmp_gt0001_cy<8> (work/Mcompar_clk_counter_cmp_gt0001_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  work/Mcompar_clk_counter_cmp_gt0001_cy<9> (work/Mcompar_clk_counter_cmp_gt0001_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  work/Mcompar_clk_counter_cmp_gt0001_cy<10> (work/Mcompar_clk_counter_cmp_gt0001_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  work/Mcompar_clk_counter_cmp_gt0001_cy<11> (work/Mcompar_clk_counter_cmp_gt0001_cy<11>)
+     MUXCY:CI->O           1   0.459   0.420  work/Mcompar_clk_counter_cmp_gt0001_cy<12> (work/Mcompar_clk_counter_cmp_gt0001_cy<12>)
+     INV:I->O             27   0.704   1.261  work/Mcompar_clk_counter_cmp_gt0001_cy<12>_inv_INV_0 (work/clk_counter_cmp_gt0001)
+     FDR:R                     0.911          work/clk_counter_0
+    ----------------------------------------
+    Total                      6.869ns (4.482ns logic, 2.387ns route)
+                                       (65.3% logic, 34.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'work/counter_tick'
+  Clock period: 1.305ns (frequency: 766.284MHz)
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Delay:               1.305ns (Levels of Logic = 1)
+  Source:            work/an_3 (LATCH)
+  Destination:       work/an_3 (LATCH)
+  Source Clock:      work/counter_tick falling
+  Destination Clock: work/counter_tick falling
+
+  Data Path: work/an_3 to work/an_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.676   0.000  work/an_3 (work/an_3)
+     MUXF5:I1->O           1   0.321   0.000  work/an_mux0000<0>_f5 (work/an_mux0000<0>)
+     LD:D                      0.308          work/an_3
+    ----------------------------------------
+    Total                      1.305ns (1.305ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'work/counter_tick'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              4.395ns (Levels of Logic = 1)
+  Source:            work/an_3 (LATCH)
+  Destination:       an<3> (PAD)
+  Source Clock:      work/counter_tick falling
+
+  Data Path: work/an_3 to an<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.676   0.447  work/an_3 (work/an_3)
+     OBUF:I->O                 3.272          an_3_OBUF (an<3>)
+    ----------------------------------------
+    Total                      4.395ns (3.948ns logic, 0.447ns route)
+                                       (89.8% logic, 10.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.55 secs
+ 
+--> 
+
+Total memory usage is 193336 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

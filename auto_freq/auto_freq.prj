@@ -1,0 +1,4 @@
+verilog work "../fib_ckt/actual_bin2bcd.v"
+verilog work "period_counter.v"
+verilog work "div.v"
+verilog work "auto_freq.v"

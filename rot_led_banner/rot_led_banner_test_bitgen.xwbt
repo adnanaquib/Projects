@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Xilinx\Projects\rot_led_banner\rot_led_banner_test.ncd
+OUTFILE=D:\Xilinx\Projects\rot_led_banner\rot_led_banner_test.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=D:\Xilinx\Projects\rot_led_banner
+LICENSE=WebPack
+USER_INFO=210790164_0_0_952

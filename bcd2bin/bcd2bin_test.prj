@@ -1,0 +1,2 @@
+verilog work "bin2bcd.v"
+verilog work "bcd2bin_test.v"

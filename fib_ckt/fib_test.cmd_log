@@ -1,0 +1,274 @@
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/fib_ckt/fib_test.xst" -ofn "D:/Xilinx/Projects/fib_ckt/fib_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Xilinx/Projects/disp_hex_mux/hex_constraints.ucf -p xc3s100e-cp132-4 fib_test.ngc fib_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fib_test_map.ncd fib_test.ngd fib_test.pcf 
+par -w -intstyle ise -ol high -t 1 fib_test_map.ncd fib_test.ncd fib_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fib_test.twx fib_test.ncd -o fib_test.twr fib_test.pcf 
+bitgen -intstyle ise -f fib_test.ut fib_test.ncd 
