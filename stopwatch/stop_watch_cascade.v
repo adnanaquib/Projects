@@ -62,7 +62,7 @@ d0_next = d0_reg;
 d1_next = d1_reg;
 d2_next = d2_reg;
 
-
+agshadgjhsd
 if(clr)
 		begin 
 			d0_next = 4'b0;
