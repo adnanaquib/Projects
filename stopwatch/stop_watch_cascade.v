@@ -81,18 +81,18 @@ else if (ms_tick)
 				begin 
 					d1_next = 4'b0;
 					if(d2_reg != 9)
-							d2_next = d2_reg + 1;
+						d2_next = d2_reg + 1;
 					else 
-							d2_next = 4'b0;
+						d2_next = 4'b0;
 				end 
 				
-				end 
-				end 
+		end 
+end 
 				
 				
-				assign d0 = d0_reg;
-				assign d1 = d1_reg;
-				assign d2 = d2_reg;
+assign d0 = d0_reg;
+assign d1 = d1_reg;
+assign d2 = d2_reg;
 				
 				
 

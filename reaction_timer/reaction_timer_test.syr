@@ -1,0 +1,631 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: reaction_timer_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "reaction_timer_test.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "reaction_timer_test"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : reaction_timer_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "reaction_timer.v" in library work
+Compiling verilog file "clock_timer_stopwatch.v" in library work
+Module <reaction_timer> compiled
+Compiling verilog file "../disp_hex_mux/disp_hex_mux.v" in library work
+Module <clock_timer_stopwatch> compiled
+Compiling verilog file "reaction_timer_test.v" in library work
+Module <disp_hex_mux> compiled
+Module <reaction_timer_test> compiled
+No errors in compilation
+Analysis of file <"reaction_timer_test.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <reaction_timer_test> in library <work>.
+
+Analyzing hierarchy for module <disp_hex_mux> in library <work> with parameters.
+	N = "00000000000000000000000000010010"
+
+Analyzing hierarchy for module <reaction_timer> in library <work> with parameters.
+	N = "00000000000000000000000000011011"
+	done = "1011"
+	idle = "0000"
+	wait_0 = "0001"
+	wait_1 = "0010"
+	wait_2 = "0011"
+	wait_3 = "0100"
+	wait_4 = "0101"
+	wait_5 = "0110"
+	wait_6 = "0111"
+	wait_7 = "1000"
+	wait_8 = "1001"
+	wait_stop = "1010"
+
+Analyzing hierarchy for module <clock_timer_stopwatch> in library <work> with parameters.
+	DVSR = "00000000010011000100101101000000"
+	done = "10"
+	idle = "00"
+	stopwatch = "01"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <reaction_timer_test>.
+Module <reaction_timer_test> is correct for synthesis.
+ 
+Analyzing module <disp_hex_mux> in library <work>.
+	N = 32'sb00000000000000000000000000010010
+Module <disp_hex_mux> is correct for synthesis.
+ 
+Analyzing module <reaction_timer> in library <work>.
+	N = 32'sb00000000000000000000000000011011
+	done = 4'b1011
+	idle = 4'b0000
+	wait_0 = 4'b0001
+	wait_1 = 4'b0010
+	wait_2 = 4'b0011
+	wait_3 = 4'b0100
+	wait_4 = 4'b0101
+	wait_5 = 4'b0110
+	wait_6 = 4'b0111
+	wait_7 = 4'b1000
+	wait_8 = 4'b1001
+	wait_stop = 4'b1010
+Module <reaction_timer> is correct for synthesis.
+ 
+Analyzing module <clock_timer_stopwatch> in library <work>.
+	DVSR = 32'sb00000000010011000100101101000000
+	done = 2'b10
+	idle = 2'b00
+	stopwatch = 2'b01
+Module <clock_timer_stopwatch> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <done_tick> in unit <clock_timer_stopwatch> has a constant value of 1 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <disp_hex_mux>.
+    Related source file is "../disp_hex_mux/disp_hex_mux.v".
+    Found 4x1-bit ROM for signal <dp>.
+    Found 16x7-bit ROM for signal <hex_in$rom0000>.
+    Found 1-of-4 decoder for signal <an>.
+    Found 4-bit 4-to-1 multiplexer for signal <hex_in>.
+    Found 18-bit up counter for signal <q_reg>.
+    Summary:
+	inferred   2 ROM(s).
+	inferred   1 Counter(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Decoder(s).
+Unit <disp_hex_mux> synthesized.
+
+
+Synthesizing Unit <reaction_timer>.
+    Related source file is "reaction_timer.v".
+WARNING:Xst:1305 - Output <done_tick> is never assigned. Tied to value 0.
+WARNING:Xst:653 - Signal <led_next> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <bcd3_reg> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:646 - Signal <bcd3_next> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bcd3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <bcd2_reg> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:646 - Signal <bcd2_next> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bcd2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <bcd1_reg> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:646 - Signal <bcd1_next> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bcd1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <bcd0_reg> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:646 - Signal <bcd0_next> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bcd0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <state_reg> of Case statement line 93 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <state_reg> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <state_reg>.
+    Found 1-bit register for signal <led_out>.
+    Found 27-bit up counter for signal <q_reg>.
+    Found 8-bit register for signal <state_reg>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <reaction_timer> synthesized.
+
+
+Synthesizing Unit <clock_timer_stopwatch>.
+    Related source file is "clock_timer_stopwatch.v".
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 1                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | clr                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <d0_next$addsub0000> created at line 93.
+    Found 4-bit register for signal <d0_reg>.
+    Found 4-bit adder for signal <d1_next$addsub0000> created at line 99.
+    Found 4-bit register for signal <d1_reg>.
+    Found 4-bit adder for signal <d2_next$addsub0000> created at line 104.
+    Found 4-bit register for signal <d2_reg>.
+    Found 23-bit adder for signal <ms_next$addsub0000> created at line 89.
+    Found 23-bit register for signal <ms_reg>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  35 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+Unit <clock_timer_stopwatch> synthesized.
+
+
+Synthesizing Unit <reaction_timer_test>.
+    Related source file is "reaction_timer_test.v".
+WARNING:Xst:1306 - Output <led> is never assigned.
+WARNING:Xst:646 - Signal <led_stop> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <en> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <reaction_timer_test> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x1-bit ROM                                           : 1
+# Adders/Subtractors                                   : 4
+ 23-bit adder                                          : 1
+ 4-bit adder                                           : 3
+# Counters                                             : 2
+ 18-bit up counter                                     : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 6
+ 1-bit register                                        : 1
+ 23-bit register                                       : 1
+ 4-bit register                                        : 3
+ 8-bit register                                        : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <counter_unit/state_reg/FSM> on signal <state_reg[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+WARNING:Xst:1710 - FF/Latch <ms_reg_17> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_18> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_19> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_20> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_21> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_22> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d2_reg_0> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d2_reg_1> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d2_reg_2> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d2_reg_3> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d1_reg_0> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d1_reg_1> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d1_reg_2> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d1_reg_3> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d0_reg_0> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d0_reg_1> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d0_reg_2> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d0_reg_3> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <led_out> (without init value) has a constant value of 0 in block <new_one>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FFd2> (without init value) has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_0> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_1> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_2> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_3> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_4> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_5> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_6> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_7> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_8> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_9> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_10> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_11> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_12> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_13> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_14> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_15> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_16> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1290 - Hierarchical block <new_one> is unconnected in block <reaction_timer_test>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x1-bit ROM                                           : 1
+# Adders/Subtractors                                   : 4
+ 23-bit adder                                          : 1
+ 4-bit adder                                           : 3
+# Counters                                             : 2
+ 18-bit up counter                                     : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 44
+ Flip-Flops                                            : 44
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <led_out> (without init value) has a constant value of 0 in block <reaction_timer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <q_reg_0> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_1> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_2> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_3> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_4> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_5> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_6> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_7> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_8> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_9> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_10> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_11> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_12> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_13> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_14> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_15> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_16> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_17> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_18> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_19> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_20> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_21> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_22> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_23> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_24> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_25> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <q_reg_26> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <state_reg_7> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <state_reg_6> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <state_reg_5> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <state_reg_4> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <state_reg_3> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <state_reg_2> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <state_reg_1> of sequential type is unconnected in block <reaction_timer>.
+WARNING:Xst:2677 - Node <state_reg_0> of sequential type is unconnected in block <reaction_timer>.
+
+Optimizing unit <reaction_timer_test> ...
+
+Optimizing unit <clock_timer_stopwatch> ...
+WARNING:Xst:2677 - Node <counter_unit/state_reg_FSM_FFd1> of sequential type is unconnected in block <reaction_timer_test>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block reaction_timer_test, actual ratio is 7.
+FlipFlop counter_unit/state_reg_FSM_FFd2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 55
+ Flip-Flops                                            : 55
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : reaction_timer_test.ngr
+Top Level Output File Name         : reaction_timer_test
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 16
+
+Cell Usage :
+# BELS                             : 226
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 39
+#      LUT2                        : 10
+#      LUT2_D                      : 1
+#      LUT2_L                      : 1
+#      LUT3                        : 15
+#      LUT3_L                      : 1
+#      LUT4                        : 57
+#      LUT4_D                      : 3
+#      LUT4_L                      : 3
+#      MUXCY                       : 45
+#      MUXF5                       : 6
+#      VCC                         : 1
+#      XORCY                       : 41
+# FlipFlops/Latches                : 55
+#      FD                          : 18
+#      FDC                         : 37
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 2
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                       70  out of    960     7%  
+ Number of Slice Flip Flops:             55  out of   1920     2%  
+ Number of 4 input LUTs:                132  out of   1920     6%  
+ Number of IOs:                          16
+ Number of bonded IOBs:                  14  out of     83    16%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 55    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+btn<0>                             | IBUF                   | 37    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.379ns (Maximum Frequency: 156.764MHz)
+   Minimum input arrival time before clock: 6.474ns
+   Maximum output required time after clock: 8.053ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.379ns (frequency: 156.764MHz)
+  Total number of paths / destination ports: 1139 / 55
+-------------------------------------------------------------------------
+Delay:               6.379ns (Levels of Logic = 9)
+  Source:            counter_unit/ms_reg_8 (FF)
+  Destination:       counter_unit/d2_reg_2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: counter_unit/ms_reg_8 to counter_unit/d2_reg_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.591   0.706  counter_unit/ms_reg_8 (counter_unit/ms_reg_8)
+     LUT3:I0->O            1   0.704   0.000  counter_unit/ms_tick_cmp_eq0000_wg_lut<0> (counter_unit/ms_tick_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  counter_unit/ms_tick_cmp_eq0000_wg_cy<0> (counter_unit/ms_tick_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  counter_unit/ms_tick_cmp_eq0000_wg_cy<1> (counter_unit/ms_tick_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  counter_unit/ms_tick_cmp_eq0000_wg_cy<2> (counter_unit/ms_tick_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  counter_unit/ms_tick_cmp_eq0000_wg_cy<3> (counter_unit/ms_tick_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  counter_unit/ms_tick_cmp_eq0000_wg_cy<4> (counter_unit/ms_tick_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O          15   0.459   1.021  counter_unit/ms_tick_cmp_eq0000_wg_cy<5> (counter_unit/ms_tick)
+     LUT4_D:I3->O          2   0.704   0.482  counter_unit/d2_next<1>11 (counter_unit/N1)
+     LUT4:I2->O            1   0.704   0.000  counter_unit/d2_next<1>1 (counter_unit/d2_next<1>)
+     FDC:D                     0.308          counter_unit/d2_reg_1
+    ----------------------------------------
+    Total                      6.379ns (4.170ns logic, 2.209ns route)
+                                       (65.4% logic, 34.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 46 / 37
+-------------------------------------------------------------------------
+Offset:              6.474ns (Levels of Logic = 5)
+  Source:            btn<2> (PAD)
+  Destination:       counter_unit/d1_reg_2 (FF)
+  Destination Clock: clk rising
+
+  Data Path: btn<2> to counter_unit/d1_reg_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            36   1.218   1.438  btn_2_IBUF (btn_2_IBUF)
+     LUT2_D:I0->LO         1   0.704   0.104  counter_unit/ms_next<0>11 (N71)
+     LUT4:I3->O            1   0.704   0.455  counter_unit/d1_next<1>11_SW2 (N51)
+     LUT4_L:I2->LO         1   0.704   0.135  counter_unit/d1_next<2>28 (counter_unit/d1_next<2>28)
+     LUT4:I2->O            1   0.704   0.000  counter_unit/d1_next<2>44 (counter_unit/d1_next<2>)
+     FDC:D                     0.308          counter_unit/d1_reg_2
+    ----------------------------------------
+    Total                      6.474ns (4.342ns logic, 2.132ns route)
+                                       (67.1% logic, 32.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 176 / 11
+-------------------------------------------------------------------------
+Offset:              8.053ns (Levels of Logic = 4)
+  Source:            disp_unit/q_reg_16 (FF)
+  Destination:       sseg<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: disp_unit/q_reg_16 to sseg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              13   0.591   1.158  disp_unit/q_reg_16 (disp_unit/q_reg_16)
+     LUT2:I0->O            1   0.704   0.000  disp_unit/Mmux_hex_in81 (disp_unit/Mmux_hex_in8)
+     MUXF5:I1->O           7   0.321   0.883  disp_unit/Mmux_hex_in8_f5 (disp_unit/hex_in<3>)
+     LUT4:I0->O            1   0.704   0.420  disp_unit/Mrom_hex_in_rom000041 (sseg_4_OBUF)
+     OBUF:I->O                 3.272          sseg_4_OBUF (sseg<4>)
+    ----------------------------------------
+    Total                      8.053ns (5.592ns logic, 2.461ns route)
+                                       (69.4% logic, 30.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.88 secs
+ 
+--> 
+
+Total memory usage is 195248 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   93 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

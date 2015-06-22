@@ -19,12 +19,11 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module reaction_timer(
-		input wire start, stop, clear, reset,
-		output reg [15:0] times,
+		input wire clk,
+		input wire start, stop, reset,
 		output wire led,
-		output reg [27:0] bin,
-		output wire done_tick, 
-		output wire [3:0] bcd0, bcd1, bcd2, bcd3
+		output reg done_tick, 
+		output start_clock, stop_clock
     );
 	
 localparam [3:0]
@@ -43,15 +42,13 @@ localparam [3:0]
 
 // Check Stopwatch project for timing conversion	
 	
-localparam n = 27;
+localparam N = 27;
 reg [2:0] state_reg, state_next;
 reg led_out;
-wire led_next;
-reg [N-1] q_reg;
-reg [N-1] q_next;
+reg led_next;
+reg [N-1:0] q_reg;
+wire [N-1:0] q_next;
 wire m_tick;
-reg [N:0] counter_clock;
-wire [N:0] counter_clock_next;
 reg [3:0] bcd0_reg, bcd1_reg, bcd2_reg, bcd3_reg;
 reg [3:0] bcd0_next, bcd1_next, bcd2_next, bcd3_next;
 
@@ -76,13 +73,11 @@ always @(posedge clk, posedge reset)
 			begin
 			state_reg <= idle;
 			led_out <= 0;
-			counter_clock <= 0;
 			end
 		else 
 			begin
 			state_reg <= state_next;
 			led_out <= led_next;
-			counter_clock <= counter_clock_next;
 			end 
 	end 
 
@@ -90,8 +85,6 @@ always @(posedge clk, posedge reset)
 always @*
 begin 
 	state_next = state_reg;
-	led_next = led_reg;
-	counter_clock_next = counter_clock;
 	bcd0_next = bcd0_reg;
 	bcd1_next = bcd1_reg;
 	bcd2_next = bcd2_reg;
@@ -161,33 +154,35 @@ begin
 		
 		wait_stop:
 			begin
-				led_out = 1'b1;
-				counter_clock_next = counter_clock + 1;
+				led_next = 1'b1;
 				if(stop)
 					state_next = done;
 			end 
 		
 		// We might need to send counter_clock to division circuit
-		// Also recalculate the division, check if the value 50000000 is right
+		// Also recalculate the division, check if the value 50,000,000 is right
 		done:
 			begin
-				bin = counter_clock;
 				done_tick = 1'b1;
+				state_next = idle;
 			end 
 		
 		default:
 			state_next = idle;
 		
-		endcase
-				
+	endcase
+end
+
 	assign bcd0 = bcd0_reg;
 	assign bcd1 = bcd1_reg;
 	assign bcd2	= bcd2_reg;
 	assign bcd3 = bcd3_reg;
-always
-ajksdhjas
-asdlkaslkdkashjsagd
-asdjhsa
+	
+	
+	assign led = led_out;
+	assign start_clock = (led_out) ? 1'b1:1'b0;
+	assign stop_clock  = (stop) ? 1'b1:1'b0;
 
-  	
 endmodule
+  	
+
