@@ -26,10 +26,10 @@ output reg done_tick
 );
 
 
-localparam DVSR = 5000000;
+localparam DVSR = 500000;
 
-reg [22:0] ms_reg;
-reg [22:0] ms_next;
+reg [18:0] ms_reg;
+wire [18:0] ms_next;
 reg [3:0] d2_reg, d1_reg, d0_reg;
 reg [1:0] state_reg, state_next;
 reg [3:0] d2_next, d1_next, d0_next;
@@ -53,7 +53,7 @@ begin
 	d2_reg <= 0;
 	d1_reg <= 0;
 	d0_reg <= 0;
-	state_reg <= 0;
+	state_reg <= idle;
 end
 else 
 begin
@@ -69,12 +69,10 @@ end
 
 always @ *
 begin
-	ms_next = ms_reg;
 	d2_next = d2_reg;
 	d1_next = d1_reg;
 	d0_next = d0_reg;
 	state_next = state_reg;
-	
 	case(state_reg)
 		idle: 
 			if(start)
@@ -86,12 +84,10 @@ begin
 					state_next = done;
 				else 
 					begin
-						ms_next = ms_reg + 1;
 						if(ms_tick)
 							begin
 								if(d0_reg !=9)
 									d0_next = d0_reg + 1;
-								
 								else 
 								begin
 									d0_next = 4'b0;
@@ -128,6 +124,10 @@ assign ms_tick = (ms_reg == DVSR) ? 1'b1:1'b0;
 assign d0 = d0_reg;
 assign d1 = d1_reg;
 assign d2 = d2_reg;
-					
+/*assign ms_next = (ms_reg == DVSR)? 1'b0:
+                   (state_reg == stopwatch)? ms_reg + 1:
+                                              ms_reg;
+*/
+assign ms_next = (ms_reg == DVSR)? 1'b0: ms_reg + 1;					
 
 endmodule

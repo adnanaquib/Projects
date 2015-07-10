@@ -26,28 +26,31 @@ module reaction_timer_test(
 	output [3:0] an
     );
 
-	wire led_stop, start_clock, stop_clock, en;
+	wire start_clock, stop_clock;//, en;
 	wire [3:0] d2, d1, d0;
-	
-disp_hex_mux disp_unit
-	 (	
-		.clk(clk), .reset(1'b0), .hex3(4'b0), .hex2(d2), .hex1(d1), .hex0(d0),
-		.dp_in(4'b1101), .an(an), .sseg(sseg)
-		);
+	wire clear;
 
+	assign clear = btn[0];
 		// Add an if condition and another output wire called en in reaction timer for custom messages on 
 		// Display to change d2, d1 and d0 values (First test in this state)
 reaction_timer new_one 
 		(
 			.clk(clk),
-			.start(btn[1]), .stop(btn[2]), .reset(btn[0]), .led(led_stop), .done_tick(),
-			.start_clock(start_clock), .stop_clock(stop_clock)
+			.start(btn[1]), .stop(btn[2]), .reset(clear), .led(led), .done_tick(),
+			.start_clock(start_clock)
 		);
 		
-		clock_timer_stopwatch counter_unit
+		stop_watch_cascade counter_unit
 		(
-			.clk(clk), .start(start_clock), .clr(btn[0]), .d2(d2), .d1(d1), .d0(d0),
-			.stop(stop_clock)
+			.clk(clk), .go(start_clock), .clr(clear), .d2(d2), .d1(d1), .d0(d0)
+			
+		);
+		
+			
+disp_hex_mux disp_unit
+	 (	
+		.clk(clk), .reset(1'b0), .hex3(4'b0), .hex2(d2), .hex1(d1), .hex0(d0),
+		.dp_in(4'b1101), .an(an), .sseg(sseg)
 		);
 		
 endmodule

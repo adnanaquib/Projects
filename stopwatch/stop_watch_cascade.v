@@ -48,7 +48,7 @@ end
 
 
 assign ms_next = (clr || (ms_reg == DVSR && go)) ? 4'b0: 
-						(!go)? ms_reg + 1:
+						(go)? ms_reg + 1:
 						ms_reg;
 						
 

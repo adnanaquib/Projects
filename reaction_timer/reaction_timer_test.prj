@@ -1,4 +1,4 @@
+verilog work "../stopwatch/stop_watch_cascade.v"
 verilog work "reaction_timer.v"
-verilog work "clock_timer_stopwatch.v"
 verilog work "../disp_hex_mux/disp_hex_mux.v"
 verilog work "reaction_timer_test.v"

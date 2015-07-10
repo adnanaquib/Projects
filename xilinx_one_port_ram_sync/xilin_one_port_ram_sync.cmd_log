@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "D:/Xilinx/Projects/xilinx_one_port_ram_sync/xilin_one_port_ram_sync.xst" -ofn "D:/Xilinx/Projects/xilinx_one_port_ram_sync/xilin_one_port_ram_sync.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/xilinx_one_port_ram_sync/xilin_one_port_ram_sync.xst" -ofn "D:/Xilinx/Projects/xilinx_one_port_ram_sync/xilin_one_port_ram_sync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 xilin_one_port_ram_sync.ngc xilin_one_port_ram_sync.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o xilin_one_port_ram_sync_map.ncd xilin_one_port_ram_sync.ngd xilin_one_port_ram_sync.pcf 
+par -w -intstyle ise -ol high -t 1 xilin_one_port_ram_sync_map.ncd xilin_one_port_ram_sync.ncd xilin_one_port_ram_sync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml xilin_one_port_ram_sync.twx xilin_one_port_ram_sync.ncd -o xilin_one_port_ram_sync.twr xilin_one_port_ram_sync.pcf 
+bitgen -intstyle ise -f xilin_one_port_ram_sync.ut xilin_one_port_ram_sync.ncd 

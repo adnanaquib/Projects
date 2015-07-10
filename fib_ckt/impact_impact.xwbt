@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\Xilinx\Projects\fib_ckt\impact.xsl
+OUTFILE=D:\Xilinx\Projects\fib_ckt\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=D:\Xilinx\Projects\fib_ckt
+LICENSE=iMPACT
+USER_INFO=iMPACT

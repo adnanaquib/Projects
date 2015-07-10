@@ -23,7 +23,7 @@ module reaction_timer(
 		input wire start, stop, reset,
 		output wire led,
 		output reg done_tick, 
-		output start_clock, stop_clock
+		output start_clock
     );
 	
 localparam [3:0]
@@ -43,14 +43,12 @@ localparam [3:0]
 // Check Stopwatch project for timing conversion	
 	
 localparam N = 27;
-reg [2:0] state_reg, state_next;
+reg [3:0] state_reg, state_next;
 reg led_out;
 reg led_next;
 reg [N-1:0] q_reg;
 wire [N-1:0] q_next;
 wire m_tick;
-reg [3:0] bcd0_reg, bcd1_reg, bcd2_reg, bcd3_reg;
-reg [3:0] bcd0_next, bcd1_next, bcd2_next, bcd3_next;
 
 
 
@@ -64,7 +62,7 @@ end
 
 assign q_next = q_reg + 1;
 
-assign m_tick = (q_reg == 0) ? 1'b1 : 1'b0;
+assign m_tick = (q_reg[N-1] == 1) ? 1'b1 : 1'b0;
 
 
 always @(posedge clk, posedge reset)
@@ -85,16 +83,12 @@ always @(posedge clk, posedge reset)
 always @*
 begin 
 	state_next = state_reg;
-	bcd0_next = bcd0_reg;
-	bcd1_next = bcd1_reg;
-	bcd2_next = bcd2_reg;
-	bcd3_next = bcd3_reg;
-	
+	led_next = led_out;
 	case (state_reg)
 		idle:
 			if(start)
 				begin
-					state_next = start;
+					state_next = wait_0;
 					
 				end 
 		
@@ -156,7 +150,10 @@ begin
 			begin
 				led_next = 1'b1;
 				if(stop)
+					begin
+					led_next = 1'b0;
 					state_next = done;
+					end 
 			end 
 		
 		// We might need to send counter_clock to division circuit
@@ -172,16 +169,10 @@ begin
 		
 	endcase
 end
-
-	assign bcd0 = bcd0_reg;
-	assign bcd1 = bcd1_reg;
-	assign bcd2	= bcd2_reg;
-	assign bcd3 = bcd3_reg;
 	
 	
 	assign led = led_out;
 	assign start_clock = (led_out) ? 1'b1:1'b0;
-	assign stop_clock  = (stop) ? 1'b1:1'b0;
 
 endmodule
   	

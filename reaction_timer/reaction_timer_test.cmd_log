@@ -10,3 +10,49 @@ xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xs
 xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
 xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
 xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 reaction_timer_test.ngc reaction_timer_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o reaction_timer_test_map.ncd reaction_timer_test.ngd reaction_timer_test.pcf 
+par -w -intstyle ise -ol high -t 1 reaction_timer_test_map.ncd reaction_timer_test.ncd reaction_timer_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reaction_timer_test.twx reaction_timer_test.ncd -o reaction_timer_test.twr reaction_timer_test.pcf 
+bitgen -intstyle ise -f reaction_timer_test.ut reaction_timer_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc reaction_timer.ucf -p xc3s100e-cp132-4 reaction_timer_test.ngc reaction_timer_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o reaction_timer_test_map.ncd reaction_timer_test.ngd reaction_timer_test.pcf 
+par -w -intstyle ise -ol high -t 1 reaction_timer_test_map.ncd reaction_timer_test.ncd reaction_timer_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reaction_timer_test.twx reaction_timer_test.ncd -o reaction_timer_test.twr reaction_timer_test.pcf -ucf reaction_timer.ucf 
+bitgen -intstyle ise -f reaction_timer_test.ut reaction_timer_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc reaction_timer.ucf -p xc3s100e-cp132-4 reaction_timer_test.ngc reaction_timer_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o reaction_timer_test_map.ncd reaction_timer_test.ngd reaction_timer_test.pcf 
+par -w -intstyle ise -ol high -t 1 reaction_timer_test_map.ncd reaction_timer_test.ncd reaction_timer_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reaction_timer_test.twx reaction_timer_test.ncd -o reaction_timer_test.twr reaction_timer_test.pcf -ucf reaction_timer.ucf 
+bitgen -intstyle ise -f reaction_timer_test.ut reaction_timer_test.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.xst" -ofn "D:/Xilinx/Projects/reaction_timer/reaction_timer_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc reaction_timer.ucf -p xc3s100e-cp132-4 reaction_timer_test.ngc reaction_timer_test.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o reaction_timer_test_map.ncd reaction_timer_test.ngd reaction_timer_test.pcf 
+par -w -intstyle ise -ol high -t 1 reaction_timer_test_map.ncd reaction_timer_test.ncd reaction_timer_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reaction_timer_test.twx reaction_timer_test.ncd -o reaction_timer_test.twr reaction_timer_test.pcf -ucf reaction_timer.ucf 
+bitgen -intstyle ise -f reaction_timer_test.ut reaction_timer_test.ncd 

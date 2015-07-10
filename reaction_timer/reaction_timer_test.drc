@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Jun 23 22:20:34 2015
+
+drc -z reaction_timer_test.ncd reaction_timer_test.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Jul 09 23:16:26 2015
+# Process ID: 12728
+# Log file: D:/Xilinx/Projects/abacus/abacus.runs/impl_1/Basys3_Abacus_Top.vdi
+# Journal file: D:/Xilinx/Projects/abacus/abacus.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Basys3_Abacus_Top.tcl -notrace
